@@ -15,7 +15,7 @@ class UploadFileMultiple {
         "png"=>1,
         "PNG"=>1
     );
-    function __construct($parametro, $destino = "../../../pacientes/") {
+    function __construct($parametro, $destino) {
         if(isset($_FILES[$parametro])){
             $nuevoArray = $this->construirArray($_FILES[$parametro]);
             foreach ($nuevoArray as $indice => $valor) {
